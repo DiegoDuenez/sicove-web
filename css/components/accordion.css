@@ -1,0 +1,100 @@
+.accordion__content{
+    display: none;
+}
+
+   @media screen and (max-width: 560px) {
+      .accordion__content{
+         margin-top: 1rem;
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+      }
+      .container__content--row{
+         display: none;
+      }
+   }
+
+ .accordion {
+    background-color: var(--verde-sicove);
+    color: white;
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font: 1.2em DejaVuSans;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.5em;
+    align-items: center;
+    margin-top: 0.2em;
+}
+   @media (hover: hover) {
+      .active,
+      .accordion:hover {
+         background-color: #39883d;
+         color: white;
+      }
+   }
+
+   @media (hover: none) {
+      .active,
+      .accordion:active {
+         background-color: #39883d;
+         color: white;
+      }
+   }
+
+
+.accordion__panel {
+   background-color: white;
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.2s ease-in;
+   font: 1.2em DejaVuSans;
+   align-self: flex-start;
+   width: 100%;
+   cursor: pointer;
+
+}
+
+.accordion__panel p:first-child{
+   margin-top: 0.5em;
+ 
+}
+
+.accordion__panel p{
+   background: #ddd;
+   transition: all .3s ease-out;
+   padding: 0.5em;
+}
+
+   @media (hover: hover) {
+      .accordion__panel p:hover{
+         background: #eee;
+      }
+   }
+
+   @media (hover: none) {
+      .accordion__panel p:active{
+         background: #eee;
+      }
+   }
+
+.accordion__panel p:last-child{
+   margin-bottom: 0.5em;
+}
+
+.accordion:after {
+   /*content: '\02795';*/
+   /* Unicode character for "plus" sign (+) */
+   font-size: 13px;
+   background-color: #39883d00;
+   float: right;
+   margin-left: 5px;
+   color: white;
+   border: white;
+}

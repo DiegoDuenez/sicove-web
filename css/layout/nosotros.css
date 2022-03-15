@@ -1,0 +1,138 @@
+@import url('../normalize.css');
+@import url('../fonts.css');
+@import url('../root.css');
+
+
+.container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+    flex-direction: row;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.container__content-left{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 2rem;
+    width: 50%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+    align-items: center;
+}
+
+.container__images{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 0.5rem;
+}
+
+.container__images-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+    flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+    justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+    align-items: center;
+}
+
+.container__img--w11{
+    width: 11em;
+}
+
+.container__img--w20{
+    width: 20em;
+}
+
+    @media screen and (max-width: 500px) {
+        .container__img--w11{
+            width: 5em;
+        }
+        
+        .container__img--w20{
+            width: 15em;
+        }
+    }
+
+
+.container__title {
+    color: var(--verde-sicove);
+    font-family: GoboldLowplus;
+    font-size: 5em;
+}
+
+    @media screen and (max-width: 480px) {
+        .container__title {
+            font-size: 3em;
+        }
+    }
+
+.container__description {
+    font-family: DejaVuSans;
+    text-align: justify;
+    color: rgb(128, 128, 128);
+    font-size: 1.3em;
+    line-height: 1.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 2rem;
+}
+    @media screen and (max-width: 500px) {
+        .container__description {
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    }
+
+.container__content-right{
+    width: 50%;
+    background-image: url('../../img/sicove_estacion_2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (min-width: 318px) and (max-width: 992px) {
+    .container__content-left{
+        width: 100%;
+    }
+    .container__content-right{
+        display: none;
+    }
+    .container__img--w11{
+        width: 6em;
+    }
+    
+    .container__img--w20{
+        width: 15em;
+    }
+    
+}

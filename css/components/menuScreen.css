@@ -1,0 +1,449 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+
+.nav-3 {
+    display: none;
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    padding: 1rem;
+    /*padding-left: 12rem;
+    padding-right: 12rem;*/
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-box-shadow: 0 0 12px -1px rgba(0, 0, 0, 0.651);
+    box-shadow: 0 0 12px -1px rgba(0, 0, 0, 0.651);
+}
+
+
+
+.nav-3 .logo-sicove {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+
+.nav-3 .logo-sicove img {
+    width: 8.5rem;
+}
+
+.nav-3 .secciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.nav-3 .secciones a {
+    display: block;
+    font-family: DejaVuSansBold;
+    font-size: 1.2em;
+    color: #4cb752;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    margin-left: 1.5em;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.nav-3 .secciones .btnIniciar {
+    display: block;
+    font-family: DejaVuSansBold;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    margin-left: 1.5em;
+    padding: 1em;
+    background-color: var(--verde-sicove);
+    border-radius: 0.8em;
+    display: none;
+
+}
+
+.nav-3 .secciones .btnIniciar:hover {
+    color: white;
+    background-color: #39883d;
+
+}
+
+.nav-3 .secciones a:hover {
+    color: #39883d;
+}
+
+.nav-3 .btnMenu {
+    display: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.nav-3 .btnMenu button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-3 .btnMenu button img {
+    width: 4em;
+}
+
+.nav-submenu:hover .nav-submenu-content {
+    display: block;
+}
+
+.nav-3 .nav-submenu-content{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+}
+
+
+div#menuNuevo {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.658);
+    -webkit-transition: left .5s;
+    -o-transition: left .5s;
+    transition: left .5s;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.filter {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+div#menuNuevo .menuTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+div#menuNuevo .menuTop .sicove-logo {
+
+    width: 7rem;
+
+}
+
+div#menuNuevo .menuTop .btn-cerrar {
+
+    width: 4em;
+    cursor: pointer;
+
+}
+
+div#menuNuevo .menuTop .btnCerrar {
+    background-color: transparent;
+    border: none;
+}
+
+
+div#menuNuevo h6 {
+    color: black !important;
+    font-size: 3.5rem;
+    font-weight: bold;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    font-family: DejaVuSansBold;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+div#menuNuevo h6:hover {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+}
+
+.link {
+    color: var(--verde-sicove);
+    text-decoration: none;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    position: relative;
+
+}
+.link:hover::after {
+    color: #39883d;
+}
+
+.link--active::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: var(--verde-sicove);
+    transition: width .3s;
+    color: #39883d;
+
+}
+
+
+
+div#menuNuevo.open {
+    left: 0;
+}
+
+
+div#menuNuevo .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 10em;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 2em;
+}
+
+div#menuNuevo .bottom .imagen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: DejaVuSans;
+    margin-top: 1em;
+
+}
+
+div#menuNuevo .bottom .imagen img {
+    width: 4em;
+}
+
+div#menuNuevo .bottom .imagen a {
+    font-size: 2em;
+    color: var(--verde-sicove);
+    margin-left: 0.5em;
+    text-decoration: none;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+div#menuNuevo .bottom .imagen a:hover {
+    color: #39883d;
+
+
+}
+
+
+@media screen and (max-width: 1500px) {
+
+    .seccion-inicio {
+        height: 100%;
+    }
+
+    .fondo {
+        height: 100%
+    }
+
+    div#menuNuevo h6 {
+        font-size: 2.5rem;
+        margin-top: 0.4em;
+
+    }
+
+    .link {
+        color: var(--verde-sicove);
+        text-decoration: none;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s;
+    }
+
+    .link:hover {
+        color: #39883d;
+    }
+
+    div#menuNuevo .bottom .imagen img {
+        width: 3em;
+    }
+
+    div#menuNuevo .bottom .imagen a {
+        font-size: 1.5em;
+        color: var(--verde-sicove);
+        margin-left: 0.5em;
+        text-decoration: none;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s;
+    }
+}
+
+@media screen and (max-width: 1136px){
+    /*.nav-3 {
+        padding: 2rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    .nav-3 .logo-sicove img {
+        width: 6rem;
+    }*/
+}
+
+@media screen and (max-width: 965px){
+    
+     .nav-3{
+         justify-content: space-between;
+     }
+    .nav-3 .secciones{
+        display:none;
+    }
+    .nav-3 .btnMenu {
+        display:flex;
+        width:4em;
+    }
+    .nav-3 .logo-sicove img{
+        width:7rem
+    }
+
+    .icon-flecha{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    div#menuNuevo .menuBody {
+        margin-top: 5em;
+    }
+
+    div#menuNuevo .bottom {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 10em;
+        width: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0em;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    div#menuNuevo h6 {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+
+    div#menuNuevo .bottom {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 10em;
+        width: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        padding-left: 0em;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 2em;
+        margin-left: 1em;
+
+    }
+
+    div#menuNuevo .bottom .imagen a {
+        font-size: 1.2em;
+        color: var(--verde-sicove);
+
+    }
+
+
+}

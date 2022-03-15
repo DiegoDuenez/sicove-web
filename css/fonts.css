@@ -1,0 +1,35 @@
+
+@font-face {
+    font-family: 'DejaVuSans';
+    src: url('../fonts/DejaVuSans.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'DejaVuSansBold';
+    src: url('../fonts/DejaVuSans-Bold.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'DejaVuSansOblique';
+    src: url('../fonts/DejaVuSans-Oblique.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'DejaVuSansCondensedBold';
+    src: url('../fonts/DejaVuSansCondensed-Bold.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'DejaVuSansCondensed';
+    src: url('../fonts/DejaVuSansCondensed.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'GoboldLowplus';
+    src: url('../fonts/Gobold Lowplus.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'GoboldLowplusItalic';
+    src: url('../fonts/Gobold Lowplus Italic.otf') format('woff');
+}
